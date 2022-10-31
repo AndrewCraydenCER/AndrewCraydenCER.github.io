@@ -1,0 +1,105 @@
+h1 {
+    font-family: 'Indie Flower', cursive;
+    text-shadow: 1px 1px 5px #000;
+}
+
+header {
+    position: relative;
+}
+
+header h2, main h2 {
+    font-family: 'Lato', sans-serif;
+}
+
+div#video-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding:0;
+    margin:0;
+    left: 0px;
+    top: 0px;
+    z-index: -1000;
+    overflow:hidden;
+}
+
+div#video-container video {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -9999;
+}
+
+
+div#filter {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 1000;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -ms-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+
+div.filter-on {
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+
+div.filter-off {
+    filter: alpha(opacity=30);
+    opacity: 0.8;
+}
+
+h1 {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    width: 500px;
+    transform: translateX(-50%);
+    z-index: 9999;
+}
+
+h1 svg {
+    margin-top: 30px;
+    width: 500px;
+    height: 400px;
+}
+
+header h2 {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 9999;
+    display: none;
+}
+
+.answer {
+    display: none;
+}
+
+div.image-container {
+    position: relative;
+}
+
+div.image-container img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+img.hidden {
+    display: none;
+}
+
+footer {
+    background:#26374a url(./images/landscape.png) no-repeat right bottom;
+}
